@@ -85,7 +85,7 @@ class Auth extends CI_Controller {
    			else
    			{
    				//실패시
-  				alert('아이디나 비밀번호를 확인해 주세요.', '/sns/controlls/lists/page/1');
+  				alert('아이디나 비밀번호를 확인해 주세요.', '/sns/auth/login');
   				exit;
    			}
 
