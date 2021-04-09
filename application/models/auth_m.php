@@ -21,7 +21,7 @@ class Auth_m extends CI_Model
 	 */
     function login($auth)
     {
-    	$sql = "SELECT username, email FROM users WHERE username = '".$auth['username']."' AND password = '".$auth['password']."' ";
+    	$sql = "SELECT name FROM st_master WHERE name = '".$auth['username']."' AND password = '".$auth['password']."' ";
    		$query = $this->db->query($sql);
 
 		if ( $query->num_rows() > 0 )

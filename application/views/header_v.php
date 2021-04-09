@@ -23,7 +23,7 @@
 if( @$this->session->userdata['logged_in'] == TRUE )
 {
 ?>
-<?php echo $this->session->userdata['username']?>님 환영합니다. <a href="/sns/auth/logout" class="btn">로그아웃</a>
+<?php echo $this->session->userdata['name']?>님 환영합니다. <a href="/sns/auth/logout" class="btn">로그아웃</a>
 <?php
 } else {
 ?>
